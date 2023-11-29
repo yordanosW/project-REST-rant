@@ -1,5 +1,6 @@
 //Creating controller
 const router = require('express').Router()
+const { cloneElement } = require('react')
 const places = require('../models/places.js')
 
 //GET /places
@@ -12,6 +13,8 @@ router.get('/new', (req, res) => {
 })
 
 router.post('/', (req, res) => {
+  console.log(req.body)
+  res.send('POST/places')
   if (!req.body.pic) {
     // Default image if one is not provided
     req.body.pic = 'http://placekitten.com/400/400'
