@@ -6,7 +6,7 @@ function home () {
       <Def>
           <main>
               <h1>HOME</h1>
-              <img src="../public/images/zeynep-sumer-skh-CC9A77U-unsplash.jpg" alt="zeynep" />
+              <img src="./images/zeynep-sumer-skh-CC9A77U-unsplash.jpg" alt="zeynep" />
               <div>
                 photo by <a href='http://vsco.co/zeynorjane'>Zeynep Sümer</a> on <a href='https://unsplash.com/s/photos/free'>Unsplash</a>
               </div>
