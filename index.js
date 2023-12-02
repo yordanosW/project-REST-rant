@@ -19,7 +19,8 @@ app.get('/', function (req, res) {
 app.get('*', function (req, res) {
     res.render('error404')
 })
-
+//Controllers and Routes
+app.use('/places', require('./controllers/places'))
 
 
 
