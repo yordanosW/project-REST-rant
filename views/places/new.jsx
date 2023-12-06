@@ -35,6 +35,10 @@ function new_form (){
   </div>
   <input className='btn btn_primary' type="submit" value="Add Place" />
 </form>
+<div className="form-group">
+  <label for="founded">Founded Year</label>
+  <input className="form-control" id="founded" name="founded" />
+</div>
 
             </main>
         </Def>
