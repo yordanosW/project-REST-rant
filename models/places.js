@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const { Place } = require('.')
+
 
 const placeSchema = new mongoose.Schema({
   name: { type: String, required: true },
@@ -14,7 +14,8 @@ const placeSchema = new mongoose.Schema({
         max: [new Date().getFullYear(), 'Hey, this year is in the future!']
    
     
-  } 
+  } ,
+  comments:[{type:mongoose.Schema.Types.ObjectId, ref:'comment'}]
 })
 
 placeSchema.methods.showEstablished = function() {
